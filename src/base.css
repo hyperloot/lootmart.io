@@ -69,6 +69,12 @@ img {
   width: 96%;
 }
 
+@media(max-width: 740px){
+  .container {
+    width: 90%;
+  }
+}
+
 @import './button.css';
 @import './modal.css';
 @import './style.css';
