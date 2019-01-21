@@ -1,0 +1,188 @@
+<div class="page-wrapper">
+  <section class="token">
+    <div class="content">
+      <h1>
+        What exactly is<br>
+        <span>the hyperloot token?</span>
+      </h1>
+      <p>The system utilizes Ethereum ERC20-based tokens with following conditions:</p>
+      <div class="info">
+        <div class="info-item">
+          <div class="number">01<span>.</span></div>
+          <div>
+            <h4>Exchange</h4>
+            <p>If you don't want to be charged trading fees, you will need to possess HLT (think of it as Binance token with a 100% discount).</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="number">02<span>.</span></div>
+          <div>
+            <h4>Staking</h4>
+            <p>It is required to issue crypto-assets and provide reserves that are used to guarantee asset quality.</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="number">03<span>.</span></div>
+          <div>
+            <h4>Clearing</h4>
+            <p>HLT reserves are used for riskless clearing &amp; settlement.</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="number">04<span>.</span></div>
+          <div>
+            <h4>Liquidity</h4>
+            <p>Integration of new liquidity providers requires reserves to fund smart contract relays.</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="number">05<span>.</span></div>
+          <div>
+            <h4>MasterNodes</h4>
+            <p>HLT is the only way to purchase master node tokens (HLTM).</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="number">06<span>.</span></div>
+          <div>
+            <h4>Governance</h4>
+            <p>Voting using HLT is the main standard for protocol governance and development.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tokenomics">
+
+    <div class="container">
+
+      <h2>How does one receive tokens?</h2>
+      <p>There are a few basic options:</p>
+
+      <div class="token-receive-options">
+        <div class="col">
+
+          <div class="item">
+            <h3>Hyperloot dao participants</h3>
+            <p>DAO pays for completed tasks using tokens with a follow-up vesting. Vesting is a basic condition for the developers to continue working with us instead of completing singular tasks. </p>
+          </div>
+
+          <div class="item">
+            <h3>Mining node owners</h3>
+            <p>You can purchase the right to a certain amount of mining tokens (mining tokens are unique ERC721 standard). Overall daily mined reward is distributed evenly between all mining nodes. </p>
+          </div>
+
+        </div>
+        <div class="col">
+
+          <div class="item">
+            <h3>Participate in Hyperloot marketing and bounties</h3>
+            <p>Completing activities is rewarded with tokens.</p>
+          </div>
+
+          <div class="item">
+            <h3>Hyperloot fund grants</h3>
+            <p>The fund will provide financing for selected developers. You can send us a request and we will make sure to review it.</p>
+          </div>
+
+          <div class="item">
+            <h3>Purchasing at an exchange</h3>
+            <p>We are currently listing tokens, they will soon become available at selected exchanges.</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="faq">
+
+    <div class="container">
+
+      <h2>FAQ<span>.</span></h2>
+
+      <div class="faq-block" id="faq">
+
+        <div class="spoiler">
+          <div class="header">
+            <h4>What tokens do you have?</h4>
+            <div class="status"></div>
+          </div>
+          <div class="content">
+            <p>HyperLoot employs 2 types of tokens – ERC20 tokens for staking and transactions (or HLT tokens) and an ERC721 master node or mining tokens (or HLPTM tokens).</p>
+          </div>
+        </div>
+		
+        <div class="spoiler">
+          <div class="header">
+            <h4>What is the value of your token?</h4>
+            <div class="status"></div>
+          </div>
+          <div class="content">
+            <p>The combined valuation of all HLT in circulation at any given time period consists of four major blocks:</p>
+            <p>
+              First, the combined value of all HLT locked up, for the purchases of MasterNodes via HLTM master node token.<br>
+              Second, the combined value of all HLT tokens staked for the purposes of in-game asset emission.<br>
+              Third, the combined value of P2P clearing&settlement partners that may want to provide financial liquidity to the global P2P marketplace.<br>
+              Fourth, the size of transactions that will take place on HyperLoot layer over Ethereum. These can be: (exchange, barter, loan, collateral, betting custody).
+            </p>
+          </div>
+        </div>
+
+        <div class="spoiler">
+          <div class="header">
+            <h4>How do i get HLT tokens?</h4>
+            <div class="status"></div>
+          </div>
+          <div class="content">
+            <p>There are a few ways:</p>
+            <p>
+              Receive them as a reward for participating in the DAO. It’s pretty simple – you do the work, you get the tokens as a payment. Every token you own is a part of the system, so you get a share in HyperLoot as a system developer.<br>
+              Buy them on an exchange. We will be list on a few exchanges soon.<br>
+              Buy HLTM tokens and join as a master node owner.<br>
+              You can participate in the HyperLoot bounty campaign.<br>
+			  You can receive investment from HyperLoot fund.
+            </p>
+          </div>
+        </div>		
+
+      </div>
+
+      <script>
+
+        (() => {
+
+          let dropdownList = document.getElementById('faq');
+              dropdownList.addEventListener('click', (e) => {
+
+                let element = e.target;
+
+                if(element.className.includes('header')) {
+                  element.parentNode.classList.toggle('is-active');
+                } else {
+                  return false;
+                }
+
+              });
+
+        })();
+
+      </script>
+
+      <a href="https://goo.gl/forms/051GVIzPX8rzU2Gz2" class="button-link button-attention">
+        Apply whitelist
+      </a>
+
+    </div>
+
+  </section>
+
+</div>
+
+
+
+
+
