@@ -19,23 +19,66 @@
         <div class="search">
           <form action="">
             <input type="text" placeholder="Search">
-            <button class="button" appearance="_fab-primary">
+            <button class="button" type="submit" appearance="_fab-primary" data-modal>
               <img src="img/search.svg" />
             </button>
           </form>
         </div>
 
-        <a href="#" class="button" appearance="_basicWithBorder-transparent">+ Create lot</a>
+        <a href="#" class="button" appearance="_basicWithBorder-transparent" data-modal>+ Create lot</a>
         
-        <a href="#" class="button" appearance="_fab-transparent">
+        <a href="#" class="button" appearance="_fab-transparent" data-modal>
           <img src="img/bell.svg" />
         </a>
 
-        <a href="#" class="link">Sign in</a>
+        <a href="#" class="link" data-modal>Sign in</a>
 
       </div>
 
     </header>
+
+    <div id="modal" class="modal">
+
+      <div class="body">
+        <a href="#" class="close" data-modal>
+          <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <g opacity="1" stroke="#ACB5BE" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 6L6 18"/>
+              <path d="m6 6l12 12"/>
+            </g>
+          </svg>
+        </a>
+        <div class="content">
+          <img src="img/hyperchan.png" />
+          <div>
+            <h3>Beta testing</h3>
+            <p>
+              Available for beta-testers only.</br>
+              Stay tuned for updates.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script>
+
+    (function(){
+
+      let modalWindow = document.getElementById('modal');
+      let modalToggleElements = document.querySelectorAll("[data-modal]");
+
+      modalToggleElements.forEach(item => {
+        item.addEventListener('click', (e) => {
+          e.preventDefault();
+          modalWindow.classList.toggle('active');
+        })
+      })
+
+    })();
+
+    </script>
 
   </body>
 </html>

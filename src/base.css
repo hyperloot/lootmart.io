@@ -70,4 +70,5 @@ img {
 }
 
 @import './button.css';
+@import './modal.css';
 @import './style.css';
