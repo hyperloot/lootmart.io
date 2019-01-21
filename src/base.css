@@ -5,6 +5,7 @@
 
   --default-color: #F3F6FC;
   --white-color: #FFF;
+  --accent-color: #DE2264;
   --red-gradient: linear-gradient(270deg, #CF4942 0%, #DE2264 100%);
 }
 
@@ -35,6 +36,10 @@ button:focus {
   outline: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 a:focus {
   text-decoration: none;
 }
@@ -51,9 +56,18 @@ button {
   background-color: transparent;
 }
 
+input {
+  color: rgba(243, 246, 252, 0.4);
+}
+
 img {
   max-width: 100%;
   max-height: 100%;
 }
 
+.container {
+  width: 96%;
+}
+
+@import './button.css';
 @import './style.css';
