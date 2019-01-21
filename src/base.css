@@ -1,5 +1,4 @@
 @import '../~normalize.css';
-@import './fonts.css';
 
 :root {
   --font-family-title: 'BebasNeueBold';
@@ -51,18 +50,19 @@ a {
 }
 
 /***** Common styles *****/
-@import './common.css';
-@import './content.css';
+/*@import './common.css';
+@import './content.css';*/
 
 /***** Components *****/
-@import './buttons.css';
+/*@import './buttons.css';
 @import './footer.css';
-@import './sidebar.css';
+@import './sidebar.css';*/
 
 /***** Pages *****/
-@import './about.css';
+/*@import './about.css';
 @import './token.css';
 @import './solutions.css';
 
 @import './posts.css';
 @import './post.css';
+*/
