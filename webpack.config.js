@@ -12,25 +12,25 @@ const moment = require('moment');
 const IS_PROD = process.env.NODE_ENV === 'production';
 
 // POST GENERATION SECTION
-const posts = fs.readdirSync('./posts/');
-const postsData = posts
-  .map(post => ({
-    ...fm(fs.readFileSync(`./posts/${post}`, 'utf8')),
-    filename: post.split('.')[0],
-    template: 'post',
-    lang: 'en',
-  }))
-  .map(post => ({
-    ...post,
-    content: marked(post.body),
-    short: marked(post.body.split('\n', 3).join('\n')),
-  }))
-  .sort((a, b) => {
-    const dateA = moment(a.attributes.date, 'D-M-Y');
-    const dateB = moment(b.attributes.date, 'D-M-Y');
+// const posts = fs.readdirSync('./posts/');
+// const postsData = posts
+//   .map(post => ({
+//     ...fm(fs.readFileSync(`./posts/${post}`, 'utf8')),
+//     filename: post.split('.')[0],
+//     template: 'post',
+//     lang: 'en',
+//   }))
+//   .map(post => ({
+//     ...post,
+//     content: marked(post.body),
+//     short: marked(post.body.split('\n', 3).join('\n')),
+//   }))
+//   .sort((a, b) => {
+//     const dateA = moment(a.attributes.date, 'D-M-Y');
+//     const dateB = moment(b.attributes.date, 'D-M-Y');
 
-    return dateA.diff(dateB);
-  });
+//     return dateA.diff(dateB);
+//   });
 
 // CONFIG
 const config = {
@@ -95,48 +95,46 @@ const config = {
   devtool: '#eval-source-map',
   plugins: [
     new CopyWebpackPlugin([{ from: 'public' }]),
-    new FaviconsWebpackPlugin('./src/assets/logo.svg'),
+    // new FaviconsWebpackPlugin('./src/assets/logo.svg'),
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: 'src/index.ejs',
       templateParameters: {
         lang: 'en',
-        template: 'about',
-        postsData,
       },
     }),
-    new HtmlWebpackPlugin({
-      filename: 'token/index.html',
-      template: 'src/index.ejs',
-      templateParameters: {
-        lang: 'en',
-        template: 'token',
-        postsData,
-      },
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'solutions/index.html',
-      template: 'src/index.ejs',
-      templateParameters: {
-        lang: 'en',
-        template: 'solutions',
-        postsData,
-      },
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'posts/index.html',
-      template: 'src/posts.ejs',
-      templateParameters: {
-        lang: 'en',
-        template: 'posts',
-        postsData,
-      },
-    }),
-    ...postsData.map(post => new HtmlWebpackPlugin({
-      filename: `posts/${post.filename}/index.html`,
-      template: 'src/post.ejs',
-      templateParameters: post,
-    })),
+    // new HtmlWebpackPlugin({
+    //   filename: 'token/index.html',
+    //   template: 'src/index.ejs',
+    //   templateParameters: {
+    //     lang: 'en',
+    //     template: 'token',
+    //     postsData,
+    //   },
+    // }),
+    // new HtmlWebpackPlugin({
+    //   filename: 'solutions/index.html',
+    //   template: 'src/index.ejs',
+    //   templateParameters: {
+    //     lang: 'en',
+    //     template: 'solutions',
+    //     postsData,
+    //   },
+    // }),
+    // new HtmlWebpackPlugin({
+    //   filename: 'posts/index.html',
+    //   template: 'src/posts.ejs',
+    //   templateParameters: {
+    //     lang: 'en',
+    //     template: 'posts',
+    //     postsData,
+    //   },
+    // }),
+    // ...postsData.map(post => new HtmlWebpackPlugin({
+    //   filename: `posts/${post.filename}/index.html`,
+    //   template: 'src/post.ejs',
+    //   templateParameters: post,
+    // })),
   ],
 };
 
