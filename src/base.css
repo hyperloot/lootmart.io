@@ -1,10 +1,7 @@
 @import '../~normalize.css';
 
 :root {
-  --font-family-title: 'BebasNeueBold';
-  --font-family-regular-bold: 'Gilroy';
-  --font-family-regular-medium: 'Gilroy-Medium';
-  --font-family-regular-light: 'Gilroy-Light';
+  --font-family-default: 'Titillium Web', sans-serif;
 
   --accent-color: #f53743;
   --white-color: #fff;
