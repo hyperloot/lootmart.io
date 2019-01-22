@@ -1,13 +1,13 @@
 const path = require('path');
-const fs = require('fs');
+// const fs = require('fs');
 // const webpack = require('webpack');
-const fm = require('front-matter');
-const marked = require('marked');
+// const fm = require('front-matter');
+// const marked = require('marked');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+// const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const moment = require('moment');
+// const moment = require('moment');
 
 const IS_PROD = process.env.NODE_ENV === 'production';
 
