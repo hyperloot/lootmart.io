@@ -134,13 +134,19 @@
     (function(){
 
       let modalWindow = document.getElementById('modal');
-      let documentBody = document.querySelectorAll('body')[0];
       let modalToggleElements = document.querySelectorAll("[data-modal]");
+
+      modalWindow.addEventListener('click', (e) => {
+        e.preventDefault();
+        let isModalBody = e.target.id === 'modal' ? true : false;
+        if(isModalBody){
+          modalWindow.classList.toggle('active');        
+        }
+      })
 
       modalToggleElements.forEach(item => {
         item.addEventListener('click', (e) => {
           e.preventDefault();
-          documentBody.classList.toggle('modal-is-active');
           modalWindow.classList.toggle('active');
         })
       })
