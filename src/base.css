@@ -28,19 +28,6 @@ body {
   position: relative;
 }
 
-/* body {
-  perspective: 5px;
-  transform-style: preserve-3d;
-  scroll-behavior: smooth;
-} */
-
-/* body.modal-is-active {
-  position: relative;
-  overflow: hidden; */
-  /* width: 100vw; */
-  /* height: 100vh; */
-/* } */
-
 input:focus,
 textarea:focus,
 button:focus {

@@ -205,11 +205,38 @@
   .header .container .search {
     flex-basis: 60%;
   }
+  .offer .contact {
+    padding: 45px 60px;
+  }
+  .offer .contact div h2 {
+    font-size: 30px;
+  }
 }
 
 @media(min-width: 1024px){
   .desktop-hidden {
     display: none;
+  }
+}
+
+@media(max-width: 1440px){
+  .hero {
+    height: 600px;
+  }
+  .hero h1 {
+    font-size: 48px;
+    padding-top: 110px;
+  }
+  .hero .product-features {
+    max-width: 55%;
+    margin-top: 80px;
+  }
+  .offer .contact {
+    width: 55%;
+  }
+  .footer .container .terms {
+    flex-basis: 45.5%;
+    margin-right: 2.5%;
   }
 }
 
