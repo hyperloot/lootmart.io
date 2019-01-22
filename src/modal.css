@@ -1,20 +1,22 @@
 .modal {
   width: 100vw;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
+  overflow: hidden;
   background-color: #171b21;
   display: none;
 }
 
 .modal.active {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal .body {
   position: relative;
-  margin: auto;
   width: 32.5%;
   background-color: #0A0C0E;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);

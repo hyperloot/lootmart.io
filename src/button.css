@@ -4,17 +4,11 @@
     align-items: center;
     height: var(--height);
     color: var(--color);
-    background-color: var(--background-color);
+    background: var(--background-color);
     transition-property: background-color;
   }
   
   /* type */
-  .button[appearance^="_icon"] {
-    --height: 40px;
-    justify-content: center;
-    width: var(--height);
-  }
-  
   .button[appearance^="_fab"] {
     --height: 40px;
     justify-content: center;
@@ -29,6 +23,7 @@
     padding-right: 20px;
     border-radius: 50px;
     font-size: 14px;
+    letter-spacing: 1px;
   }
 
   .button[appearance^="_basicWithBorder"] {
@@ -60,6 +55,14 @@
   
   .button[appearance$="primary"]:hover {
     --background-color: var(--accent-color);
+  }
+
+  .button[appearance$="accent"]:not(:hover) {
+    --background-color: linear-gradient(45deg,#CF4942, #DE2264);
+  }
+  
+  .button[appearance$="accent"]:hover {
+    --background-color: linear-gradient(225deg,#CF4942, #DE2264);
   }
   
   .button[disabled] {
