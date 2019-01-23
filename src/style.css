@@ -13,7 +13,7 @@
 
 .header .container .logo {
   flex-basis: 150px;
-  margin-right: 7.5%;
+  margin-right: 20%;
 }
 
 .header .container > a:not(.logo) {
@@ -21,7 +21,7 @@
 }
 
 .header .container .search {
-  flex-basis: 65%;
+  flex-basis: 55%;
   margin-right: 2.5%;
 }
 
@@ -199,6 +199,15 @@
 
 .footer .container .copyright {
   color: rgba(243, 246, 252, 0.4);
+}
+
+@media(max-width: 1920px){
+  .header .container .logo {
+    margin-right: 7.5%;
+  }
+  .header .container .search {
+    flex-basis: 65%;
+  }
 }
 
 @media(max-width: 1620px){

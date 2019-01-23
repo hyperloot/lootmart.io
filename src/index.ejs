@@ -139,9 +139,7 @@
       modalWindow.addEventListener('click', (e) => {
         e.preventDefault();
         let isModalBody = e.target.id === 'modal' ? true : false;
-        if(isModalBody){
-          modalWindow.classList.toggle('active');        
-        }
+        if(isModalBody) modalWindow.classList.toggle('active');        
       })
 
       modalToggleElements.forEach(item => {
