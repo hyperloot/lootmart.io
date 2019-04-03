@@ -3,14 +3,12 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#E5E5E5;}
-	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_1_);}
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_1_);}
 </style>
-<rect class="st0" width="300" height="300"/>
-<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="214.351" y1="-19.9325" x2="85.5249" y2="-19.9325" gradientTransform="matrix(1 0 0 -1 0 130)">
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="223.3124" y1="1044" x2="76.6876" y2="1044" gradientTransform="matrix(1 0 0 1 0 -894)">
 	<stop  offset="0" style="stop-color:#CF4942"/>
 	<stop  offset="1" style="stop-color:#DE2264"/>
 </linearGradient>
-<path class="st1" d="M214.1,64.7l0.3-0.2v0v0v44.6v0v92.4l-36.8,19.3v-92.3L149.9,143l-27.6-14.5v50.4l27.6,16.5v40l-64.4-33.9
-	v-44.6l0,0v-47.7V64.5l64.4,38.5L214.1,64.7z"/>
+<path class="st0" d="M223,53l0.3-0.2l0,0l0,0v50.7l0,0v105.1l-41.9,22v-105l-31.5,16.5l-31.4-16.5v57.3l31.4,18.8v45.5l-73.3-38.6
+	v-50.7l0,0v-54.3V52.8l73.3,43.8L223,53z"/>
 </svg>
