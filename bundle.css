@@ -630,16 +630,25 @@ template {
 
 .header .container .logo {
   flex-basis: 150px;
-  margin-right: 20%;
+  margin-right: 40%;
 }
 
-.header .container > a:not(.logo) {
+.header .container .plus-create {
+  margin-right: 6px;
+  margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.header .container>a:not(.logo) {
   margin: auto;
 }
 
 .header .container .search {
-  flex-basis: 55%;
+  flex-basis: 35%;
   margin-right: 2.5%;
+  margin-left: auto;
+  flex-shrink: 0;
 }
 
 .header .container .search form {
@@ -667,7 +676,7 @@ template {
 .header .container .search form button img {
   --size: 16px;
   height: var(--size);
-  width: var(--size); 
+  width: var(--size);
 }
 
 .header .container .link:not(:hover) {
@@ -681,12 +690,13 @@ template {
 }
 
 .hero {
-  height: 700px;
+  max-height: 800px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url(/promo-bg.jpg?949203361b8781262fdb5c2d1e3c0bab);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   font-size: 18px;
+  padding-bottom: 48px;
 }
 
 .hero h1 {
@@ -695,10 +705,12 @@ template {
   letter-spacing: 2px;
   text-align: center;
   text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
-  line-height: 1.5;
+  line-height: 1.4;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
-.hero > .button {
+.hero>.button {
   --height: 50px;
   max-width: 220px;
   margin-top: 64px;
@@ -718,6 +730,11 @@ template {
 
 .hero .product-features .item {
   display: flex;
+  align-items: center;
+}
+
+.hero .product-features .item .img {
+  width: 90px;
 }
 
 .hero .product-features .item img {
@@ -731,13 +748,15 @@ template {
 }
 
 .offer {
-  height: 400px;
+  max-height: 500px;
+  height: 100%;
   display: flex;
   background-color: #222730;
+  padding: 24px 0;
 }
 
 .offer .contact {
-  width: 45%;
+  width: 50%;
   padding: 45px 80px;
   display: flex;
   margin: auto;
@@ -758,11 +777,12 @@ template {
   flex-direction: column;
 }
 
-.offer .contact div h2 {
+.offer .contact p {
   margin: 0;
-  font-size: 36px;
-  line-height: 1.5;
+  font-size: 27px;
+  line-height: 1.4;
   font-weight: 600;
+  margin-bottom: 24px;
 }
 
 .offer .contact div .button {
@@ -785,7 +805,7 @@ template {
   align-items: center;
 }
 
-.footer .container > img {
+.footer .container>img {
   width: 140px;
   margin-right: auto;
 }
@@ -816,9 +836,10 @@ template {
 
 .footer .container .copyright {
   color: rgba(243, 246, 252, 0.4);
+  max-width: 500px;
 }
 
-@media(max-width: 1920px){
+@media(max-width: 1920px) {
   .header .container .logo {
     margin-right: 7.5%;
   }
@@ -827,7 +848,7 @@ template {
   }
 }
 
-@media(max-width: 1620px){
+@media(max-width: 1620px) {
   .header .container .search {
     flex-basis: 60%;
   }
@@ -837,25 +858,32 @@ template {
   .offer .contact div h2 {
     font-size: 30px;
   }
+  .footer .container .copyright {
+    max-width: 300px;
+  }
+  .offer .contact p {
+    font-size: 24px;
+  }
 }
 
-@media(min-width: 1024px){
+@media(min-width: 1024px) {
   .desktop-hidden {
     display: none;
   }
 }
 
-@media(max-width: 1440px){
-  .hero {
-    height: 600px;
-  }
+@media(max-width: 1440px) {
   .hero h1 {
-    font-size: 48px;
+    font-size: 36px;
     padding-top: 110px;
   }
   .hero .product-features {
-    max-width: 55%;
+    max-width: 65%;
     margin-top: 80px;
+  }
+  .hero .product-features .item span {
+    font-size: 14px;
+    margin-top: 0;
   }
   .offer .contact {
     width: 55%;
@@ -866,7 +894,7 @@ template {
   }
 }
 
-@media(max-width: 1024px){
+@media(max-width: 1024px) {
   .desktop-hidden {
     display: block;
   }
@@ -883,7 +911,7 @@ template {
     margin-right: auto;
     overflow: hidden;
   }
-  .header .container .logo > img {
+  .header .container .logo>img {
     width: 185px;
     max-width: none;
     max-height: none;
@@ -895,11 +923,11 @@ template {
   .header .container .search input {
     display: none;
   }
-  .header .container > a:not(.logo) {
+  .header .container>a:not(.logo) {
     margin-left: 24px;
     margin-right: 24px;
   }
-  .header .container > a:last-of-type {
+  .header .container>a:last-of-type {
     margin-right: 0;
   }
   .hero {
@@ -920,14 +948,14 @@ template {
   }
 }
 
-@media(max-width: 768px){
+@media(max-width: 768px) {
   .hero {
     height: 475px;
   }
   .hero h1 {
     font-size: 30px;
   }
-  .hero > .button {
+  .hero>.button {
     max-width: 200px;
   }
   .hero .product-features {
@@ -955,19 +983,20 @@ template {
   }
 }
 
-@media(max-width: 740px){
-  .header .container > a:not(.logo) {
+@media(max-width: 740px) {
+  .header .container>a:not(.logo) {
     margin-left: 12px;
     margin-right: 12px;
   }
-  .header .container > a:last-of-type {
+  .header .container>a:last-of-type {
     margin-right: 0;
   }
   .header .container .search {
     margin-right: 12px;
   }
   .hero {
-    height: 670px;
+    max-height: 1000px;
+    height: 100%;
   }
   .hero h1 {
     width: 80%;
@@ -980,18 +1009,21 @@ template {
     align-items: center;
     margin-top: 58px;
   }
+  .hero .product-features .item span {
+    font-size: 16px;
+  }
   .hero .product-features .item img {
-    width: 60px;
     margin-right: 30px;
   }
-  .hero .product-features .item:not(:first-of-type){
+  .hero .product-features .item:not(:first-of-type) {
     margin-top: 36px;
   }
-  .hero .product-features .item:nth-of-type(2){
+  .hero .product-features .item:nth-of-type(2) {
     margin-left: -20px;
   }
   .offer {
-    height: 440px;
+    height: 100%;
+    max-height: 700px;
   }
   .offer .contact {
     width: calc(100% - 30px);
@@ -1022,10 +1054,10 @@ template {
   .footer .container {
     align-content: center;
   }
-  .footer .container > img {
+  .footer .container>img {
     margin-top: 48px;
   }
-  .footer .container > * {
+  .footer .container>* {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -1048,7 +1080,7 @@ template {
   }
 }
 
-@media(max-width: 320px){
+@media(max-width: 320px) {
   .hero h1 {
     width: 90%;
   }
