@@ -125,7 +125,6 @@
 }
 
 .hero .product-features .item span {
-  margin-top: auto;
   line-height: 1.5;
   letter-spacing: 1px;
 }
@@ -229,11 +228,17 @@
   .header .container .search {
     flex-basis: 65%;
   }
+  .hero .product-features {
+    max-width: 60%;
+  }
 }
 
 @media(max-width: 1620px) {
   .header .container .search {
     flex-basis: 60%;
+  }
+  .hero .product-features {
+    max-width: 65%;
   }
   .offer .contact {
     padding: 45px 60px;
@@ -313,15 +318,12 @@
   .header .container>a:last-of-type {
     margin-right: 0;
   }
-  .hero {
-    height: 525px;
-  }
   .hero h1 {
     font-size: 36px;
     padding-top: 90px;
   }
   .hero .product-features {
-    max-width: 70%;
+    max-width: 90%;
   }
   .offer .contact {
     width: 70%;
@@ -329,12 +331,13 @@
   .offer .contact div h2 {
     font-size: 24px;
   }
+  .footer .container .terms{
+    flex-basis: 35%;
+    margin-left: 2.5%;
+  }
 }
 
 @media(max-width: 768px) {
-  .hero {
-    height: 475px;
-  }
   .hero h1 {
     font-size: 30px;
   }
