@@ -1013,6 +1013,9 @@ template {
     width: 800px;
     align-items: center;
   }
+  .block-mobile .top-mobile {
+    width: 340px;
+  }
   .block-mobile .bottom-mobile {
     padding-top: 0;
     padding-left: 4px;
