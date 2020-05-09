@@ -970,6 +970,10 @@ template {
   font-size: 12px;
 }
 
+.block-mobile .top-mobile .install-desktop {
+  display: none;
+}
+
 .mobile-copy {
   display: none;
 }
@@ -1013,13 +1017,14 @@ template {
     width: 800px;
     align-items: center;
   }
-  .block-mobile .top-mobile {
-    width: 340px;
+  .block-mobile .top-mobile .install {
+    display: none;
   }
-  .block-mobile .bottom-mobile {
-    padding-top: 0;
-    padding-left: 4px;
-    font-size: 14px;
+  .block-mobile .bottom-mobile p {
+    display: none;
+  }
+  .block-mobile .top-mobile .install-desktop {
+    display: block;
   }
   .header .container {
     position: relative;
